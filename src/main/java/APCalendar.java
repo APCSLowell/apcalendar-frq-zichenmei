@@ -14,7 +14,7 @@ public class APCalendar
   { 
     /* to be implemented in part (a) */
     int num=year1;
-    int numYear=0;
+    int numYears=0;
     for(int i=num;i<=year2;num++){
       if(isLeapYear(num)==true){
         numYears++;
@@ -59,7 +59,7 @@ public class APCalendar
   {
     /* to be implemented in part (b) */
     int startDay=firstDayOfYear(year);
-    int nthDay=dayofYear(month, day, year);
+    int nthDay=dayOfYear(month, day, year);
     int returnDay=(startDay+nthDay-1)%7;
     return returnDay;
   }
