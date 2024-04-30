@@ -13,10 +13,9 @@ public class APCalendar
   public static int numberOfLeapYears(int year1, int year2)
   { 
     /* to be implemented in part (a) */
-    int num=year1;
     int numYears=0;
-    for(int i=num;i<=year2;i++){
-      if(isLeapYear(num)==true){
+    for(int y=year1;i<=year2;i++){
+      if(isLeapYear(y)){
         numYears++;
       }
     }return numYears;
